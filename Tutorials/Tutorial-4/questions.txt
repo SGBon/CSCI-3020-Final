@@ -1,0 +1,25 @@
+6 //This is the number of questions in the file - File Structure: category(0=programming,1=algorithms,2=databases),question,answer,value.
+0
+what is two plus two
+what is four
+100
+0
+fast sort
+what is quicksort
+1000
+1
+Q in sql
+what is query
+500
+1
+waht is it
+what is it
+200
+2
+why are blue blue
+what is blue
+999
+2
+meaning of life?
+what is 42
+9001

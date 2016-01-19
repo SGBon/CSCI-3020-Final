@@ -1,0 +1,29 @@
+1. MPI is a library of routines that can be used to create and manage parallel programs in C. It is fairly easy to use, and allows for thread to thread communication.
+
+2. MPI allows seperate computers in a cluster to communicate by the use of broadcasts, sends and receives. These messages can be passed to and by computers to other computers, allowing seperate computers to work on the same data or on the same problem.
+
+3. MPI_CHAR, MPI_INT, MPI_C_BOOL, MPI_FLOAT
+
+4. MPI_Bcast broadcasts a message from the master process to all other processes in the group. Its parameters are:
+	buffer - Starting address of the buffer for the broadcast.
+	count - Number of entries in the buffer.
+	datatype - The data type of the buffer. Integer, Boolean, etc.
+	root - Rank of the thread broadcasting.
+	comm - communicator/handle.
+
+5. MPI_Send performs a basic send over the network. Its parameters are:
+	buf - Starting address of the buffer for the send.
+	count - Number of entries in the buffer.
+	datatype - The data type of the buffer. Integer, Boolean, etc.
+	dest - Which process you are going to be sending to. 
+	tag - The tag of the message. The tag can tell the program to do something specific. Postive integer. 
+	comm - communicator/handle.
+
+   MPI_Recv looks for messages sent over the network. Its parameters are:
+   	count  - Maximum number of entries in the buffer.
+    datatype - The data type of the buffer. Integer, Boolean, etc.
+    source - Which process the message is being received from.
+    tag - The tag of the message. The tag can tell the program to do something specific. Postive integer. 
+    comm - communicator/handle.
+
+

@@ -1,0 +1,3 @@
+My implementation of the solver checks the row, column and square for all potential values. If a number is found it is no longer considered for a potential value. Then if the row, column and box have completed and there is only one number left then that is the right number. This is then repeated until all cells have been solved.
+
+I implemented threading by allowing the row checker, column checker and box checker to be threaded. This makes it so they are all checked concurrently. I prefered this method due to the small ammount of threads which makes better usagage of our computer's architecture.

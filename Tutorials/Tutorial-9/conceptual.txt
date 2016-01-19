@@ -1,0 +1,19 @@
+1. OpenMP is a specificiation for a bunch of compile directives, library routines, and variables that can be used to specifiy high level parallelism in C, C++, and Fortran. It allows the programmer to designate a block as in need of parallelism, and then OpenMP can handle how the parallelism in that actual block is handled.
+
+2. 	#omp parallel - This pragma is used to fork additional threads to carry out the work enclosed in the block. Original thread gets 
+	denoted as thread 0, with the rest being given different thread ids.
+	#omp for - Used for splitting up threads for a for loop.
+	#omp do - Used for splitting up threads for a do while loop.
+	#omp critical - Defines a critical section for all of your threads.
+	#omp master - Designates a section that only the master thread will execute.
+	#omp single - Designates a section that only one designated thread will execute.
+	#omp barrier - Sets up a barrier, where all threads must finish before the threads can continue to work.
+	#omp sections - Designates a section in the block of code that each thread will do. It assigns one thread per section in the block.
+	#omp atomic - Makes the next expression after the compile time atomic, meaning it has to be done in one go and not interrupted.
+
+3. #prag ma omp parallel for
+
+4. Specifies that one or more variables that are private to each thread are the subject of the specified operation at the end of the parallel region.
+
+5. 	#critical - Defines a critical section for all of your threads.
+	#private - Specifies that each thread should have its own instance of a variable.

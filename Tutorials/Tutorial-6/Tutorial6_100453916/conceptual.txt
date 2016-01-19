@@ -1,0 +1,32 @@
+Question 1
+The fork() command creates a new child process while pthreads creates threads. Processes are
+more memory intensive and run in a seperate memory space, while threads run in the same
+memory space.
+
+Question 2
+Inter-Process communication is communication between processes in a program. File writing can
+be used as a form of IPC, as well as modifying of a global variable that all threads have access
+to. 
+
+Question 3
+Semaphores are another way to control when different processes and threads access shared resources
+and critical sections. A semaphore is an integer variable that has two atomic operations that can 
+be performed on it, wait() and signal(). They work like a mutex lock as only one process can modify 
+the semaphore value at a time. A mutex lock is more of a locking mechanism to synchronize access to 
+a resource. A semaphore is more of a signalling system, telling the programs when they can access
+shared resources. Also, specific queue semaphores can not use spin waiting, while mutexs do.
+
+Question 4
+In a semaphore lock, there are two functions; wait() and signal(). When wait() is called, that process
+will wait until it is signalled by another process that calls signal(). When signal is called, the
+process that is waiting will then proceed to continue its execution.
+
+Question 5
+The functions in semaphore.h are:
+-sem_init: Initalizes a semaphore for use.
+-sem_wait: Makes the process wait for the semaphore to be signalled. Blocking is used.
+-sem_timedwait: Makes the process wait for the semaphore to be signalled. Blocking with timeout is used.
+-sem_trywait: Tries to make a process wait for a sempahore to be signalled. Non-blocking is used.
+-sem_post: Signals the semaphore to let the next process waiting to be exectued.
+-sem_getvalue: Gets the value of the semaphore.
+-sem_destroy: Disposes of the semaphore when not needed.

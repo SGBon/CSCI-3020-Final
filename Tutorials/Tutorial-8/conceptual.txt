@@ -1,0 +1,14 @@
+1. An abstract data type is a model for data types is defined by its behaviour from the point of view of a user. Some examples are stacks and queues.
+
+2. A queue is like a line of people. The first person to enter the line is the first person to be served. This is First in First Out (FIFO). Stacks are like piles of things. You can only remove the thing off the top of the pile, so the newest thing added to the pile is the one that gets serviced first. This is Last in first out (LIFO).
+
+3. 
+	Linked List: A simple form of data structure, each part of the list is a "node". Each node has the data, and a pointer to the next spot in the list. Useful for making lists of undetermined size.
+
+	Binary Tree: Used for keeping track of data that can be sorted, such as values that can be greater or less then other values. The top of the tree is the root, with two leaves coming off of the root. These leaves can also have leaves. The leaf on the right is greater then the parent value, and the leaf on the left is less then the parent value.
+
+	Heaps: A heap is a specialized tree based data strucute. A heap is either a max heap, where each parent node is greater then its two children, or a min heap, where the opposite is true. They are useful for graph algorithms and sorting of data.
+
+4. A binary tree is a way of storing data that can be sorted. The top of the tree is the root, with two leaves coming off of the root. These leaves can also have leaves. The leaf on the right is greater then the parent value, and the leaf on the left is less then the parent value. Some common operations on binary trees are insert, sort, delete, traverse.
+
+5. A hash table is a data structure that can implement associative arrays, which are arrays that can maps keys to values. A hash table uses a hash function to compute the keys for each value. Some common operations of hash tables are insert, delete, and contains.

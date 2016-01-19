@@ -1,0 +1,25 @@
+
+ Start 
+
+It Works!
+Displaying contents of /home/mentoso/Desktop/RHYSREPO/CSCI-3020-Lab2
+myshell.exe
+Santiago
+red.txt
+Makefile
+RHYmyshell.h
+.gitignore
+README.md
+utility.h
+myshell.h
+test.txt
+.git
+help
+myshell.c
+RHYmyshell.c
+readme
+DanCENA!
+RHYutility.c
+SANmyshell.c
+utility.c
+
